@@ -9,7 +9,9 @@ public class Projectile extends GameObject{
 		speed = 10;
 	}
 	void update() {
-		
+		if(speed<=0) {
+			y-=speed;
+		}
 	}
 	void draw(Graphics g) {
 		g.setColor(Color.RED);
